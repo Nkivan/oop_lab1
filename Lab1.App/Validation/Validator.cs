@@ -3,7 +3,6 @@ using System.Text.RegularExpressions;
 
 namespace Lab1.App.Validation
 {
-    /// <summary>Усі регулярні вирази перевірки даних в одному місці.</summary>
     public static class Validator
     {
         public const string NamePattern = @"^[A-Za-zА-Яа-яІіЇїЄєҐґ'’\-]{2,30}$";
