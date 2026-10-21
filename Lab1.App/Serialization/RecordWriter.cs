@@ -4,7 +4,6 @@ using Lab1.App.Services;
 
 namespace Lab1.App.Serialization
 {
-    /// <summary>Формує рядки запису для файлу (поелементно, атрибут за атрибутом).</summary>
     public static class RecordWriter
     {
         public static string[] Format(IPersonSerializer serializer, Person person)
@@ -19,7 +18,7 @@ namespace Lab1.App.Serialization
                 string suffix = i == fields.Length - 1 ? "};" : ",";
                 lines = Arrays.Add(lines, $"{prefix}\"{fields[i].Key}\": \"{values[i]}\"{suffix}");
             }
-            return Arrays.Add(lines, string.Empty);   // порожній рядок між записами
+            return Arrays.Add(lines, string.Empty);   
         }
 
         private static string ObjectName(Person p)
