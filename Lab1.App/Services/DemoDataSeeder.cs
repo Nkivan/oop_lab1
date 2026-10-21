@@ -3,14 +3,12 @@ using Lab1.App.Repository;
 
 namespace Lab1.App.Services
 {
-    /// <summary>Набір вхідних даних для демонстрації (N &gt; 5).</summary>
     public class DemoDataSeeder
     {
         private readonly PersonRepository _repository;
 
         public DemoDataSeeder(PersonRepository repository) { _repository = repository; }
 
-        /// <returns>Скільки записів додано (існуючі ідентифікатори пропускаються).</returns>
         public int Seed()
         {
             Person[] demo =
