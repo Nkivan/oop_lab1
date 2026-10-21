@@ -11,7 +11,6 @@ namespace Lab1.App
 {
     internal static class Program
     {
-        // Composition root: єдине місце, де створюються конкретні класи й збираються залежності (IoC).
         private static void Main()
         {
             string path = Path.Combine(AppContext.BaseDirectory, "people.txt");
