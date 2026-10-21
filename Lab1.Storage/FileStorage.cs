@@ -4,7 +4,6 @@ using System.Text;
 
 namespace Lab1.Storage
 {
-    /// <summary>Читання/запис текстового файлу через потоки (FileStream + StreamReader/StreamWriter).</summary>
     public class FileStorage : IFileStorage
     {
         private static readonly Encoding Utf8NoBom = new UTF8Encoding(false);
