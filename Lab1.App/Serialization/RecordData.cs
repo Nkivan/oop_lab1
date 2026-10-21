@@ -2,7 +2,7 @@ using System;
 
 namespace Lab1.App.Serialization
 {
-    /// <summary>Один прочитаний запис файлу: тип, назва об'єкта та пари «ключ — значення».</summary>
+
     public class RecordData
     {
         public string TypeName { get; }
