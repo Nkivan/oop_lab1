@@ -2,7 +2,6 @@ using System;
 
 namespace Lab1.App.Services
 {
-    /// <summary>Допоміжні операції над масивами (колекції за умовою лабораторної заборонені).</summary>
     public static class Arrays
     {
         public static T[] Add<T>(T[] source, T item)
