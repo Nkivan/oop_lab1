@@ -3,7 +3,6 @@ using Lab1.App.Domain;
 
 namespace Lab1.App.Services
 {
-    /// <summary>Завдання варіанта 2: студенти 1-го курсу, що приїхали з інших міст.</summary>
     public class StudentStatistics
     {
         private readonly string _universityCity;
