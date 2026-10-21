@@ -29,7 +29,6 @@ namespace Lab1.App.Domain
             Dances = dances;
         }
 
-        /// <summary>Навчання у ВНЗ.</summary>
         public void Study() => StudyHours++;
 
         public void Dance() => Dances++;
