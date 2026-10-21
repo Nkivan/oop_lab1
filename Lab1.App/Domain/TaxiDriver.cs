@@ -24,7 +24,6 @@ namespace Lab1.App.Domain
 
         public void Drive() => Trips++;
 
-        /// <summary>Самонавчання.</summary>
         public void Study() => StudyHours++;
 
         public void Dance() => Dances++;
