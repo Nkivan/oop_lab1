@@ -8,7 +8,6 @@ using Lab1.App.Services;
 
 namespace Lab1.App.UI
 {
-    /// <summary>Єдиний клас, який працює з консоллю (ввід/вивід).</summary>
     public class ConsoleMenu
     {
         private readonly PersonRepository _repository;
@@ -37,7 +36,7 @@ namespace Lab1.App.UI
             {
                 PrintMenu();
                 string choice = Console.ReadLine()?.Trim();
-                if (choice == null) break;           // кінець вхідного потоку
+                if (choice == null) break;           
                 try
                 {
                     switch (choice)
@@ -77,7 +76,6 @@ namespace Lab1.App.UI
             Console.Write("Ваш вибір: ");
         }
 
-        // ---------- команди ----------
 
         private void AddPerson()
         {
@@ -92,7 +90,6 @@ namespace Lab1.App.UI
             string[] keys = new string[fields.Length];
             string[] values = new string[fields.Length];
 
-            // Ввід поелементно, кожен атрибут перевіряється регулярним виразом
             for (int i = 0; i < fields.Length; i++)
             {
                 keys[i] = fields[i].Key;
@@ -147,14 +144,14 @@ namespace Lab1.App.UI
                 Console.WriteLine($"  {i + 1}. {available[i].Name}");
 
             available[ReadNumber(1, available.Length) - 1].Execute(person);
-            _repository.Update(person);          // зберегти змінений стан у файл
+            _repository.Update(person);          
             Console.WriteLine("Дію виконано. Новий стан:");
             PrintPerson(person);
         }
 
         private void ShowVariantTask()
         {
-            Person[] all = _repository.GetAll();     // дані читаються з файлу
+            Person[] all = _repository.GetAll();     
             Student[] fromOther = _statistics.GetFirstYearFromOtherCities(all);
             int total = _statistics.CountFirstYear(all);
 
@@ -164,7 +161,6 @@ namespace Lab1.App.UI
             foreach (Student s in fromOther) PrintPerson(s);
         }
 
-        // ---------- допоміжні методи вводу/виводу ----------
 
         private void PrintPerson(Person person)
         {
