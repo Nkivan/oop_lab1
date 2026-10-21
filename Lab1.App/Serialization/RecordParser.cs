@@ -4,12 +4,7 @@ using Lab1.App.Services;
 
 namespace Lab1.App.Serialization
 {
-    /// <summary>
-    /// Розбирає рядки файлу формату:
-    ///   ТипДаних НазваОб'єкту
-    ///   { "атрибут1": "значення1",
-    ///     "атрибут2": "значення2"};
-    /// </summary>
+
     public static class RecordParser
     {
         private static readonly Regex Header = new Regex(@"^(\w+)\s+(\w+)$");
