@@ -7,7 +7,6 @@ namespace Lab1.App.Domain
         public string FirstName { get; }
         public string LastName { get; }
 
-        /// <summary>Унікальний ідентифікатор конкретного типу особи.</summary>
         public abstract string Id { get; }
 
         protected Person(string firstName, string lastName)
