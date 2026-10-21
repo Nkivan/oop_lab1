@@ -6,7 +6,6 @@ using Lab1.Storage;
 
 namespace Lab1.App.Repository
 {
-    /// <summary>База даних осіб у файлі. Залежить від абстракцій (IFileStorage, SerializerRegistry).</summary>
     public class PersonRepository
     {
         private readonly IFileStorage _storage;
@@ -62,8 +61,6 @@ namespace Lab1.App.Repository
             WriteAll(rest);
             return true;
         }
-
-        /// <summary>Зберігає змінений стан особи (після виконання дії).</summary>
         public void Update(Person person)
         {
             Person[] all = GetAll();
